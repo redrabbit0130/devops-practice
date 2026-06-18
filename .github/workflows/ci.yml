@@ -38,6 +38,6 @@ jobs:
         if: github.event_name == 'push'
         uses: docker/build-push-action@v6
         with:
-          context: ./fix-submission
+          context: .
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/fix-submission:latest
