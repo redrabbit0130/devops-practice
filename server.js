@@ -1,7 +1,7 @@
 const http = require("http");
 
 const PORT = process.env.PORT || 3000;
-const APP_MESSAGE = process.env.APP_MESSAGE || "Hello DevOps Beginner";
+const APP_MESSAGE = process.env.APP_MESSAGE || "Hello from CI/CD";
 
 const server = http.createServer((req, res) => {
 	if(req.url === "/health"){
