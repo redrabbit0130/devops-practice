@@ -12,10 +12,6 @@ jobs:
   build-test-and-docker:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: fix-submission
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
